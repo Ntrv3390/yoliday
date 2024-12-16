@@ -12,7 +12,7 @@ function App() {
   }
   const handleSearch = async () => {
     try {
-      const response = await fetch(`/api/search?search=${searchQuery}`);
+      const response = await fetch(`https://yoliday-backend.vercel.app/api/search?search=${searchQuery}`);
       if (!response.ok) {
         setFetchError(true);
         setError("Data not found");
